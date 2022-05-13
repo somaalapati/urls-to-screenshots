@@ -11,8 +11,8 @@ Generate full page screenshots by taking list of URLs as input
 2. Give names to the excel file tab and the file.
 3. Place this .xlsx file in sr/main/resources filder.
 4. Open the URLtoScreenshot.java file > "readExcel" method (line 107) > Add file name and tab name as parameter values (2nd & 3rd parameters).
-```readExcel(filePath, "URLsDocument.xlsx", "urls", 0, "failedURLs_1.txt", 1);
-```
+
+`readExcel(filePath, "URLsDocument.xlsx", "urls", 0, "failedURLs_1.txt", 1);`
 
 # Results:
 - You can get the created screenshots in target/screenshots folder.
