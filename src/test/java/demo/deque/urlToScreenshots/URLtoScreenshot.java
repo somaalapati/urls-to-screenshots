@@ -111,7 +111,7 @@ public class URLtoScreenshot {
 		//@Test
 		public void script2() throws IOException {		
 			String filePath = System.getProperty("user.dir") + "\\src\\resources";
-			readExcel(filePath, "122021URLs_1001_to_2000.xlsx", "April06-2022", 1000, "failedURLs_2.txt", 816);		
+			readExcel(filePath, "122021URLs_1001_to_2000.xlsx", "April06-2022", 1001, "failedURLs_2.txt", 1);		
 		}
 
 	}

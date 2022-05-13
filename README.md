@@ -11,6 +11,8 @@ Generate full page screenshots by taking list of URLs as input
 2. Give names to the excel file tab and the file.
 3. Place this .xlsx file in sr/main/resources filder.
 4. Open the URLtoScreenshot.java file > "readExcel" method (line 107) > Add file name and tab name as parameter values (2nd & 3rd parameters).
+```readExcel(filePath, "URLsDocument.xlsx", "urls", 0, "failedURLs_1.txt", 1);
+```
 
 # Results:
 - You can get the created screenshots in target/screenshots folder.
@@ -27,5 +29,5 @@ Generate full page screenshots by taking list of URLs as input
 - We use this parameter to maintain sequence number to all the URLs from different files within a batch.
 - In "URLtoScreenshot.Java" file, readExcel method contains a parameter "fileSeq".
 - Default value is 0.
-- When we need to run 2 excel files parallelly and each file contains 1000 URLs, then 'fileSeq' value for first test should be '0'. For the 2nd test the value should be '1001'.
+- When we need to run 2 excel files parallelly and each file contains 1000 URLs, then 'fileSeq' value for the first test should be '0'. For the 2nd test the value should be '1001'.
 - When we need to run 4 excel files parallelly/sequencially, then we should give '0' to first test, 1001 to 2nd test, 2001 to 1st test 2nd run and 3001 to 2nd test 2nd run. 
