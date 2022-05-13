@@ -7,10 +7,10 @@ Generate full page screenshots by taking list of URLs as input
 - TestNG (install it in Eclipse if you run tests from Eclipse)
 
 # Steps to Configure:
-1. Add the URLs in a .xlsx file.
+1. Add the URLs in an excel(.xlsx) file.
 2. Give names to the excel file tab and the file.
 3. Place this .xlsx file in sr/main/resources filder.
-4. Open the URLtoScreenshot.java file > go to line 107 > Add file name and tab name as parameter values (2nd & 3rd parameters).
+4. Open the URLtoScreenshot.java file > "readExcel" method (line 107) > Add file name and tab name as parameter values (2nd & 3rd parameters).
 
 # Results:
 - You can get the created screenshots in target/screenshots folder.
@@ -24,6 +24,7 @@ Generate full page screenshots by taking list of URLs as input
 - This updated value skip the completed URLs and start with the 151st URL.
 
 ## Parameter - FileSeq:
+- We use this parameter to maintain sequence number to all the URLs from different files within a batch.
 - In "URLtoScreenshot.Java" file, readExcel method contains a parameter "fileSeq".
 - Default value is 0.
 - When we need to run 2 excel files parallelly and each file contains 1000 URLs, then 'fileSeq' value for first test should be '0'. For the 2nd test the value should be '1001'.
